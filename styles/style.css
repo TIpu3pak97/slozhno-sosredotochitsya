@@ -1,5 +1,239 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: 'IBM Plex mono', arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--main-text-color);
+  margin: 0 auto;
+  line-height: 23.4px;
+}
+
+h1 {
+  color: var(--title-text-color);
+  text-shadow: 4px 4px var(--title-shedow-color);
+}
+
+h2 {
+  color: var(--title-h2-color);
+  margin: 0px;
+}
+
+h3 {
+  background-color: var(--title-h3-h4-bgcolor);
+  color: var(--title-h3-h4-txtcolor);
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+  background-color: var(--header-background-color);
+  color: var(--header-text-color);
+  margin: 0;
+  margin-top: 20px;
+}
+
+p {
+  margin: 10px 0 0 0;
+}
+
+main {
+  font-size: 18px;
+  text-wrap: wrap;
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  right: 10px;
+  top: 10px;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  left: 10px;
+  bottom: 10px;
+}
+
+.header-main-title {
+  position: relative;
+  display: block;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-wrap: wrap;
+  padding: 0 10px 0 10px;
+  padding-block-start: 36vh;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 95.7px;
+}
+
+.header-title {
+  position: relative;
+  display: block;
+  text-wrap: wrap;
+  background-color: var(--title-h3-h4-bgcolor);
+  color: var(--title-h3-h4-txtcolor);
+  margin: 0 10px 0 10px;
+  margin-top: 8vh;
+  line-height: 23.4px;
+}
+
+.header__theme-menu-list {
+  position: absolute;
+  margin-block-start: 11.3vh;
+  margin-inline-start: calc(80% - 45px);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.header__theme-menu-button {
+  font-size: 18px;
+  text-transform: lowercase;
+  background-color: rgb(1, 1, 1, 0%);
+  border: none;
+  color: var(--title-h2-color);
+  padding: 1.5px 13px;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--border-color);
+}
+
+.header__theme-menu-button:default {
+  border: 1px solid var(--page-border-color);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--page-border-color-hover);
+}
+
+.header__theme-menu-button:focus {
+ outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--page-border-color);
+}
+
+section {
+  margin: 30px 10px 50px 10px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-1-title__main {
+  margin-top: 10px;
+}
+
+.section-1-title {
+  margin-top: 20px;
+}
+
+.section-2-title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.articles {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.articles-title {
+  margin-top: 10px;
+}
+
+.section-3-title {
+  margin: 20px 0 0 0;
+}
+
+.pictures-title {
+  background-color: var(--title-h3-h4-bgcolor);
+  color: var(--title-h3-h4-txtcolor);
+  margin-top: 50px;
+}
+
+.images-in-section {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 10px;
+  margin-block-end: 40px;
+  gap: 10px;
+}
+
+.items {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  right: 10px;
+  top: 10px;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  left: 10px;
+  bottom: 10px;
+}
+
+.footer-title {
+  display: block;
+  font-size: 116px;
+  margin: auto;
 }
