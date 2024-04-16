@@ -9,7 +9,6 @@
 
 h1 {
   color: var(--title-text-color);
-  text-shadow: 4px 4px var(--title-shedow-color);
 }
 
 h2 {
@@ -40,6 +39,12 @@ h4 {
 
 p {
   margin: 10px 0 0 0;
+}
+
+.text-accent {
+  text-decoration: none;
+  color: var(--main-text-color);
+  text-shadow: 2px 2px var(--header-background-color);
 }
 
 main {
@@ -89,6 +94,7 @@ main {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 95.7px;
+  text-shadow: 4px 4px var(--title-shedow-color);
 }
 
 .header-title {
@@ -120,7 +126,7 @@ main {
   background-color: rgb(1, 1, 1, 0%);
   border: none;
   color: var(--title-h2-color);
-  padding: 1.5px 13px;
+  padding: 1.5px 15px;
 }
 
 .header__theme-menu-button_active {
@@ -240,4 +246,5 @@ section {
   display: block;
   font-size: 116px;
   margin: auto;
+  text-shadow: 2px 2px var(--title-shedow-color);
 }
