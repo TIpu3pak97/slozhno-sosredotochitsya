@@ -207,12 +207,6 @@ section {
   gap: 10px;
 }
 
-.items {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .footer {
   position: relative;
   display: flex;
