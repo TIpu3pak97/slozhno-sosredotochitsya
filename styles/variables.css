@@ -95,7 +95,7 @@
 
   .images-in-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 31.5%);
+    grid-template-columns: repeat(auto-fit, 32%);
     grid-template-areas: 'a a b' 'c d b' 'c e e';
     gap: 20px;
   }
