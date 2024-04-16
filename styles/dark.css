@@ -47,7 +47,7 @@
   @media (width > 767.99px) {
     .header__theme-menu::before {
       right: 48px;
-      top: 20px; 
+      top: 20px;
     }
 
     .header__theme-menu::after {

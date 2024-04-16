@@ -4,6 +4,7 @@
   color: var(--main-text-color);
   margin: 0 auto;
   line-height: 23.4px;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -183,6 +184,10 @@ section {
   margin: 20px 0 0 0;
 }
 
+.section-4 {
+  margin-bottom: 40px;
+}
+
 .pictures-title {
   background-color: var(--title-h3-h4-bgcolor);
   color: var(--title-h3-h4-txtcolor);
@@ -193,7 +198,6 @@ section {
   display: flex;
   flex-direction: column;
   margin-block-start: 10px;
-  margin-block-end: 40px;
   gap: 10px;
 }
 
