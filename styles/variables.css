@@ -34,6 +34,30 @@
     .header {
       background-image: url('../images/cover-image-dark.png');
     }
+
+    .header__theme-menu::before {
+      content: 'REC';
+      position: absolute;
+      font-size: 18px;
+      font-weight: 400;
+      right: 38px;
+      top: 10px;
+      color: var(--border-color);
+    }
+  
+    .header__theme-menu::after {
+      content: '';
+      position: absolute;
+      display: block;
+      align-items: center;
+      border-radius: 50%;
+      box-shadow: 0px 0px 4px 2px var(--border-color);
+      height: 9px;
+      width: 9px;
+      right: 19px;
+      top: 18px;
+      background-color: var(--border-color);
+    }
   }
 }
 @media (width > 767.99px) {
