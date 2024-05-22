@@ -11,6 +11,7 @@
   --page-border-color: #353430;
   --page-border-color-hover: rgba(50, 49, 45, 0.4);
   --border-color: rgba(53, 52, 48, 1);
+  
   .header {
     background-image: url('../images/cover-image-light.png');
   }

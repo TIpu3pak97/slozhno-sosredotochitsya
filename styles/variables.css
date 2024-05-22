@@ -16,6 +16,26 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  .page {
+    --main-text-color: #F1B2CE;
+    --header-text-color: #000028;
+    --header-background-color: #FF0070;
+    --background-color: #000028;
+    --title-text-color: #DB00FF;
+    --title-h2-color: rgba(255, 0, 112, 1);
+    --title-h3-h4-bgcolor: rgba(255, 0, 112, 1);
+    --title-h3-h4-txtcolor: rgba(0, 0, 40, 1);
+    --title-shedow-color: #FF0070;
+    --page-border-color: #FF0070;
+    --page-border-color-hover: rgba(255, 0, 112, 0.4);
+    --border-color: rgba(255, 0, 112, 1);
+  
+    .header {
+      background-image: url('../images/cover-image-dark.png');
+    }
+  }
+}
 @media (width > 767.99px) {
   .header::before {
     right: 20px;
