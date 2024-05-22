@@ -37,10 +37,6 @@ h4 {
   margin-top: 20px;
 }
 
-p {
-  margin: 10px 0 0 0;
-}
-
 .text-accent {
   text-decoration: none;
   color: var(--main-text-color);
@@ -155,11 +151,6 @@ section {
   margin: 30px 10px 50px 10px;
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-}
-
 .section-1-title__main {
   margin-top: 10px;
 }
@@ -168,9 +159,16 @@ section {
   margin-top: 20px;
 }
 
+.section-1-text {
+  margin-top: 10px;
+}
+
 .section-2-title {
-  margin: 0;
   margin-bottom: 10px;
+}
+
+.section-2-text {
+  margin-top: 10px;
 }
 
 .articles {
@@ -186,8 +184,20 @@ section {
   margin-top: 10px;
 }
 
-.section-3-title {
+.article-text {
+  margin-top: 10px;
+}
+
+.section-3-main_title {
   margin: 20px 0 0 0;
+}
+
+.section-3-title {
+  margin-top: 10px;
+}
+
+.section-3-text {
+  margin-top: 10px;
 }
 
 .section-4 {

@@ -36,6 +36,7 @@
     }
   }
 }
+
 @media (width > 767.99px) {
   .header::before {
     right: 20px;
