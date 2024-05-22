@@ -70,7 +70,7 @@
   }
 
   section {
-    margin: 60px 20px 80px 20px;
+    margin: 60px 20px 0px 20px;
   }
 
   .section {
@@ -92,12 +92,23 @@
     margin-bottom: 20px;
   }
 
+  .section-2 {
+    margin-top: 80px;
+  }
   .section-2-title {
     width: calc(33% - 20px);
+    margin-top: 0;
+  }
+
+  .section-3 {
+    margin-top: 80px;
+  }
+  .section-3-main_title {
+    margin-top: 0;
   }
 
   .section-3-title {
-    margin: 0;
+    margin-top: 20px;
   }
 
   .section-content {
@@ -106,6 +117,7 @@
   }
 
   .section-4 {
+    margin-top: 80px;
     margin-bottom: 60px;
   }
 
