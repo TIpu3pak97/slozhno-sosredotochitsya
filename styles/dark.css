@@ -21,7 +21,6 @@
     position: relative;
   }
 
-  
   .header__theme-menu::before {
     content: 'REC';
     position: absolute;
