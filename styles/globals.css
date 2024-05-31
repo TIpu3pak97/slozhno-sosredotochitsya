@@ -10,14 +10,42 @@ body {
   margin: 0 auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+h1 {
+  color: var(--title-text-color);
+  margin: 0;
+}
+
+h2 {
+  color: var(--title-h2-color);
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h3 {
+  background-color: var(--title-h3-h4-bgcolor);
+  color: var(--title-h3-h4-txtcolor);
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+  background-color: var(--header-background-color);
+  color: var(--header-text-color);
+  margin: 0;
+  margin-top: 20px;
+}
+
+h5, h6 {
+  margin: 0;
+}
+
 p {
   margin: 0;
+  margin-top: 10px;
 }
 
 ul {

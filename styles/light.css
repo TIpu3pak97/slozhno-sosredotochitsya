@@ -14,5 +14,6 @@
   
   .header {
     background-image: url('../images/cover-image-light.png');
+    background-size: cover;
   }
 }
