@@ -8,9 +8,20 @@
 }
 
 .text-accent {
+  cursor: pointer;
   text-decoration: none;
   color: var(--main-text-color);
   text-shadow: 2px 2px var(--header-background-color);
+  border: 1px solid transparent;
+}
+
+.text-accent:hover {
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.text-accent:focus {
+  outline: none;
+  border: 1px solid var(--main-text-color);
 }
 
 main {
@@ -76,23 +87,24 @@ main {
 
 .header__theme-menu-list {
   position: absolute;
-  margin-block-start: 11.3vh;
-  margin-inline-start: calc(80% - 45px);
+  margin-block-start: 10.8vh;
+  margin-inline-start: calc(80% - 5px);
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  gap: 12px;
+  gap: 11px;
 }
 
 .header__theme-menu-button {
   font-size: 18px;
   text-transform: lowercase;
   background-color: rgb(1, 1, 1, 0%);
-  border: none;
+  border: 1px solid transparent;
   color: var(--title-h2-color);
-  padding: 1.5px 15px;
+  padding: 0 14px;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
@@ -115,6 +127,7 @@ main {
 .header__theme-menu-button:focus-visible {
   outline: none;
   border-bottom: 1px solid var(--page-border-color);
+  padding: 1px 15px 0px 15px;
 }
 
 section {
@@ -228,8 +241,8 @@ section {
   }
 
   .header__theme-menu-list {
-    margin-block-start: 18.75vh;
-    margin-inline-start: calc(90% - 51px);
+    margin-block-start: 18.6vh;
+    margin-inline-start: calc(90% - 12px);
   }
 
   .header-main-title {
@@ -371,11 +384,11 @@ section {
   }
 
   .header-main-title {
-    padding-block-start: 36vh;
+    padding-block-start: 38vh;
   }
 
   .header-title {
-    margin: 16.7vh 20px 0 50%;
+    margin: 16.9vh 20px 0 50%;
   }
 
   .section-why-so-hard_title-main {
