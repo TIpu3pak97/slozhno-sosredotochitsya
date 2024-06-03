@@ -11,45 +11,45 @@
   --page-border-color: #FF0070;
   --page-border-color-hover: rgba(255, 0, 112, 0.4);
   --border-color: rgba(255, 0, 112, 1);
-  background-image: url('../images/cover-image-dark.png');
-  background-size: cover;
-    
-  .header__theme-menu {
-    position: relative;
+  --background-image: url('../images/cover-image-dark.png');
+}
+
+.header__theme-menu {
+  position: relative;
+}
+
+.rec::before {
+  content: 'REC';
+  position: absolute;
+  font-size: 18px;
+  font-weight: 400;
+  right: 38px;
+  top: 10px;
+  color: var(--border-color);
+}
+
+.rec::after {
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--border-color);
+  height: 9px;
+  width: 9px;
+  right: 19px;
+  top: 18px;
+  background-color: var(--border-color);
+}
+
+@media (width > 767.99px) {
+  .rec::before {
+    right: 48px;
+    top: 20px;
   }
 
-  .header__theme-menu::before {
-    content: 'REC';
-    position: absolute;
-    font-size: 18px;
-    font-weight: 400;
-    right: 38px;
-    top: 10px;
-    color: var(--border-color);
-  }
-
-  .header__theme-menu::after {
-    content: '';
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    box-shadow: 0px 0px 4px 2px var(--border-color);
-    height: 9px;
-    width: 9px;
-    right: 19px;
-    top: 18px;
-    background-color: var(--border-color);
-  }
-
-  @media (width > 767.99px) {
-    .header__theme-menu::before {
-      right: 48px;
-      top: 20px;
-    }
-
-    .header__theme-menu::after {
-      right: 29px;
-      top: 28px;
-    }
+  .rec::after {
+    right: 29px;
+    top: 28px;
   }
 }
+

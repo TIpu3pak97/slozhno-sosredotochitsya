@@ -5,6 +5,9 @@
   margin: 0 auto;
   line-height: 23.4px;
   background-attachment: fixed;
+  background-image: url('../images/cover-image-light.png');
+  background-size: cover;
+  background-image: var(--background-image);
 }
 
 .text-accent {

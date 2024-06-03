@@ -11,6 +11,31 @@
   --page-border-color: #353430;
   --page-border-color-hover: rgba(50, 49, 45, 0.4);
   --border-color: rgba(53, 52, 48, 1);
-  background-image: url('../images/cover-image-light.png');
-  background-size: cover;
+  --background-image: url('../images/cover-image-light.png');
+
+  .rec::before {
+    content: none;
+  }
+  
+  .rec::after {
+    content: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --main-text-color: #353430;
+  --header-text-color: #353430;
+  --header-background-color: #FF8DCB;
+  --background-color: #FFF1F7;
+  --title-text-color: #FFC2E6;
+  --title-h2-color: rgba(53, 52, 48, 1);
+  --title-h3-h4-bgcolor: rgba(255, 141, 203, 1);
+  --title-h3-h4-txtcolor: rgba(53, 52, 48, 1);
+  --title-shedow-color: #FF0070;
+  --page-border-color: #353430;
+  --page-border-color-hover: rgba(50, 49, 45, 0.4);
+  --border-color: rgba(53, 52, 48, 1);
+  --background-image: url('../images/cover-image-light.png');
+  }
 }
